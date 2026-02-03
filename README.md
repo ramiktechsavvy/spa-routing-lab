@@ -1,70 +1,189 @@
-# Getting Started with Create React App
+# 🚀 SPA Routing Lab – React Router
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates **Single Page Application (SPA) routing** using **React Router**. It is designed as a **lab experiment project** covering basic routing, navigation, and multi-page SPA concepts with a clean and simple UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Aim of the Project
 
-### `npm start`
+To implement client-side routing in a React Single Page Application using React Router, enabling navigation between multiple views without reloading the page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧪 Experiments Covered
 
-### `npm test`
+### ✅ Experiment 1: Basic Client-Side Routing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Setup of `BrowserRouter`
+* Defining routes using `Routes` and `Route`
+* Rendering components based on URL
 
-### `npm run build`
+### ✅ Experiment 2: Navigation Using Link Component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Navigation using `Link`
+* Smooth page transitions without reload
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ✅ Experiment 3: Multi-Page SPA Using Routing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Multiple pages (Home, About, Contact)
+* Additional pages (Profile, Career Objective)
+* Demonstrates real-world SPA behavior
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React
+* React Router DOM
+* JavaScript (ES6)
+* CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Project Structure
 
-## Learn More
+```
+spa-routing-lab/
+ ├─ src/
+ │   ├─ components/
+ │   │   ├─ Home.js
+ │   │   ├─ About.js
+ │   │   ├─ Contact.js
+ │   │   ├─ Profile.js
+ │   │   └─ Career.js
+ │   ├─ assets/
+ │   │   └─ profile.png
+ │   ├─ App.js
+ │   ├─ App.css
+ │   ├─ index.js
+ │   └─ index.css
+ ├─ public/
+ ├─ package.json
+ └─ README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🖼️ Application Screenshots
 
-### Code Splitting
+### 🏠 Home Page
+![Home Page](screenshots/home.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 👤 Profile Page
+![Profile Page](screenshots/profile.png)
 
-### Analyzing the Bundle Size
+### 🎯 Career Objective Page
+![Career Objective Page](screenshots/career.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ℹ️ About Page
+![About Page](screenshots/About.png)
 
-### Making a Progressive Web App
+### 📞 Contact Page
+![Contact Page](screenshots/Contact.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### 🏠 Home Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Home Page](screenshots/home.png)
 
-### Deployment
+This is the landing page of the application. It provides navigation buttons to Profile and Career Objective pages and demonstrates smooth SPA routing without page reloads.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 👤 Profile Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Profile Page](screenshots/profile.png)
+
+This page displays personal profile details such as name, age, height, and a circular profile photograph, similar to a social media profile view.
+
+---
+
+### 🎯 Career Objective Page
+
+![Career Objective Page](screenshots/career.png)
+
+This page describes the career goal of becoming an AI Engineer and lists core technical skills such as Machine Learning, Deep Learning, and Web Development.
+
+---
+
+### ℹ️ About Page
+
+![About Page](screenshots/about.png)
+
+This page provides a brief about message and serves as an informational section of the application.
+
+---
+
+### 📞 Contact Page
+
+![Contact Page](screenshots/contact.png)
+
+This page displays contact information such as email address and phone number.
+
+---
+
+## ▶️ How to Run the Project
+
+1. Open terminal in the project folder
+2. Install dependencies (only once):
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm start
+```
+
+4. Open browser and visit:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔁 How Routing Works (Simple Explanation)
+
+* The application loads once in the browser
+* Clicking links changes the URL
+* React Router matches the URL with a route
+* The corresponding component is rendered
+* The page does not reload
+
+---
+
+## 👤 Additional Features
+
+* Profile page with circular profile image
+* Career Objective page with skills list
+* Clean and simple UI
+* Beginner-friendly code structure
+
+---
+
+## 🧠 Key Learning Outcomes
+
+* Understanding of SPA concept
+* Usage of React Router
+* Difference between routing and page reload
+* Component-based architecture
+
+---
+
+## 📌 Author
+
+**Ramik Chauhan**
+CSE (AI/ML Specialization)
+
+---
+
+## ✅ Conclusion
+
+This project successfully demonstrates the implementation of routing in a Single Page Application using React Router. It provides smooth navigation, modular components, and a clear understanding of SPA behavior.
+
+---
+
+✨ *Fast. Smooth. No Reloads.*
